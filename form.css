@@ -34,6 +34,10 @@ form {
   font-size: 28px;
   color: var(--acent-color);
   font-weight: 600;
+  cursor: default;
+}
+.message {
+  cursor: default;
 }
 .name_box {
   display: flex;
@@ -82,8 +86,10 @@ form label input:focus + span {
 }
 .signin {
   text-align: center;
+  cursor: default;
 }
 .sgn {
   color: var(--acent-color);
   text-decoration: underline;
+  cursor: pointer;
 }
