@@ -50,10 +50,13 @@ input {
   background-color: var(--input-color--);
   padding: 13px 10px;
   border-radius: 10px;
-  border: none;
+  border-color: var(--background-color--);
   outline: none;
   width: 290px;
   height: 45px;
+}
+input::placeholder {
+  color: rgba(58, 57, 57, 0.803);
 }
 .name_box input {
   width: calc(280px / 2);
@@ -68,7 +71,7 @@ span {
   left: 10px;
   transition: 0.3s ease;
 }
-form label input:focus + span {
+form label input + span {
   top: -7px;
   font-size: 12px;
   font-weight: 600;
@@ -84,6 +87,16 @@ form label input:focus + span {
   font-size: 16px;
   cursor: pointer;
 }
+.submit:disabled {
+  width: 290px;
+  height: 39px;
+  border-radius: 10px;
+  background-color: var(--input-color--);
+  border: none;
+  color: var(--background-color--);
+  font-size: 16px;
+  cursor: pointer;
+}
 .signin {
   text-align: center;
   cursor: default;
@@ -92,4 +105,13 @@ form label input:focus + span {
   color: var(--acent-color);
   text-decoration: underline;
   cursor: pointer;
+}
+input:required:valid {
+  border-color: greenyellow;
+}
+input:required:invalid {
+  border-color: red;
+}
+form label input:focus + form {
+  box-shadow: 2px 2px 85px 0px rgba(0, 0, 0, 0.75);
 }

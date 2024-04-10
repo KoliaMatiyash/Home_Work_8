@@ -18,27 +18,57 @@
       <p class="message">Signup now and get full access to our app.</p>
       <div class="name_box">
         <label>
-          <input type="text" placeholder="" />
+          <input
+            class="valid_input"
+            type="text"
+            required
+            pattern="^[a-zA-Z]{2,20}$"
+            placeholder="Лише латинь"
+          />
           <span>Firstname</span>
         </label>
         <label>
-          <input type="text" placeholder="" />
+          <input
+            class="valid_input"
+            type="text"
+            required
+            pattern="^[a-zA-Z]{3,25}$"
+            placeholder="Лише латинь"
+          />
           <span>Lasttname</span>
         </label>
       </div>
       <label for="">
-        <input class="input" type="email" />
+        <input
+          class="input valid_input"
+          type="email"
+          required
+          pattern="^[a-zA-Z0-9._%+-]{6,24}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          placeholder="Ваша електрона пошта"
+        />
         <span>Email</span>
       </label>
       <label for="">
-        <input class="input" type="password" />
+        <input
+          class="input valid_input"
+          type="password"
+          required
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,20}$"
+          placeholder="8-20 символів"
+        />
         <span>Password</span>
       </label>
       <label for="">
-        <input class="input" type="password" />
+        <input
+          class="input valid_input"
+          type="password"
+          required
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,20}$"
+          placeholder="8-20 символів"
+        />
         <span>Confirm password</span>
       </label>
-      <button class="submit">Submit</button>
+      <button disabled class="submit">Submit</button>
       <p class="signin">
         Already have an acount ? <a class="sgn" href="#">Signin</a>
       </p>
