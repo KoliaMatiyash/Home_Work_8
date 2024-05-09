@@ -112,6 +112,6 @@ input:required:valid {
 input:required:invalid {
   border-color: red;
 }
-form label input:focus + form {
+.form:hover {
   box-shadow: 2px 2px 85px 0px rgba(0, 0, 0, 0.75);
 }
